@@ -22,7 +22,7 @@
   "devDependencies": {
     "esbuild": "0.15.18",
     "tap-arc": "0.3.5",
-    "tape-run": "^10.0.0",
+    "tape-run": "10.0.0",
     "tapzero": "^0.6.1",
     "xterm": "4.18.0"
   },
