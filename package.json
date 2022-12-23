@@ -2,7 +2,7 @@
   "name": "@nichoth/test-dom",
   "description": "Tools for testing in a browser environment",
   "main": "./dist/index.js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "directories": {
     "test": "test"
   },
