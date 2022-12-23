@@ -1,0 +1,22 @@
+{
+  "extends": "./_types/base-tsconfig.json",
+  "compilerOptions": {
+    "target": "es2018",
+    "types": ["node"],
+    "lib": ["es2018", "dom", "DOM.Iterable"],
+    "noEmit": true,
+    "checkJs": true,
+    "module": "commonjs",
+    "strict": false,
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "paths": {
+      "*" : ["./_types/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.d.ts"
+  ]
+}

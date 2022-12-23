@@ -1,0 +1,43 @@
+{
+  "name": "@socketsupply/test-dom",
+  "description": "Tools for testing in a browser environment",
+  "main": "./dist/index.js",
+  "version": "0.5.1",
+  "directories": {
+    "test": "test"
+  },
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist/* && node ./build.js && npm run minify-esm && npm run minify-cjs",
+    "preversion": "npm run build && npm test",
+    "postversion": "git push && git push --tags",
+    "minify-esm": "esbuild dist/index.mjs --keep-names --minify --outfile=dist/index.min.mjs",
+    "minify-cjs": "esbuild dist/index.cjs --keep-names --minify --outfile=dist/index.min.cjs",
+    "prepublishOnly": "npm run build",
+    "test": "esbuild --bundle test/test.js | tape-run | tap-arc"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.8",
+    "tap-arc": "^0.3.5",
+    "tape-run": "^10.0.0",
+    "tapzero": "^0.6.1",
+    "xterm": "4.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socketsupply/test-dom.git"
+  },
+  "keywords": [
+    "dom",
+    "test"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socketsupply/test-dom/issues"
+  },
+  "homepage": "https://github.com/socketsupply/test-dom#readme"
+}
