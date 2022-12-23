@@ -7,19 +7,19 @@ Here we implement similar functionality but with less code.
 ## install
 
 ```
-npm i -D @socketsupply/test-dom
+npm i -D @nichoth/test-dom
 ```
 
 ## use
 
 ### commonjs
 ```js
-const dom = require('@socketsupply/test-dom')
+const dom = require('@nichoth/test-dom')
 ```
 
 ### esm
 ```js
-import { dom } from '@socketsupply/test-dom'
+import { dom } from '@nichoth/test-dom'
 ```
 
 ## example
