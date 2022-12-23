@@ -13,7 +13,7 @@
   "scripts": {
     "build": "rm -rf ./dist/* && node ./build.js && npm run minify-esm && npm run minify-cjs",
     "preversion": "npm run build && npm test",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags && npm publish",
     "minify-esm": "esbuild dist/index.mjs --keep-names --minify --outfile=dist/index.min.mjs",
     "minify-cjs": "esbuild dist/index.cjs --keep-names --minify --outfile=dist/index.min.cjs",
     "prepublishOnly": "npm run build",
