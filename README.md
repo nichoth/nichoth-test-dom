@@ -1,8 +1,5 @@
 # test dom
-
-We had previously used `@testing-library/dom` & `@testing-library/user-event`.
-
-Here we implement similar functionality but with less code.
+Tools for interacting with DOM elements
 
 ## install
 
