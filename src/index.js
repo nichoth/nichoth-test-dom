@@ -2,11 +2,8 @@
 'use strict'
 
 /**
- * We had previously used `@testing-library/dom` & `@testing-library/user-event`.
+ * had previously used `@testing-library/dom` & `@testing-library/user-event`.
  * We found these dependencies to be large, buggy and hard to work with.
- *
- * Here in this package we implement similar functionality but with
- * less code.
  */
 
 const dom = {}
