@@ -1,7 +1,7 @@
 // @ts-check
 'use strict'
 
-const { test } = require('tapzero')
+const { test } = require('@nichoth/tapzero')
 const dom = require('../dist/index.cjs')
 const { Terminal } = require('xterm')
 
@@ -46,7 +46,6 @@ test('multiple tags', async t => {
     const terminal = new Terminal({
         allowTransparency: true,
         fontFamily: 'FiraMono',
-        rendererType: 'dom',
         fontSize: 14
     })
     terminal.writeln('foo bar baz')
