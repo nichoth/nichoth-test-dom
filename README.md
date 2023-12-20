@@ -1,4 +1,7 @@
 # test dom
+![tests](https://github.com/nichoth/debug/actions/workflows/nodejs.yml/badge.svg)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
+
 Tools for interacting with DOM elements
 
 ## install
