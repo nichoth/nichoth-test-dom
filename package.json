@@ -3,12 +3,17 @@
   "version": "0.6.4",
   "description": "Tools for testing in a browser environment",
   "main": "./dist/index.mjs",
+  "types": "./lib/index.d.ts",
   "directories": {
     "test": "test"
   },
   "exports": {
     "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
+    "require": "./dist/index.cjs",
+    "*.min.js": {
+      "import": "./dist/index.min.mjs",
+      "require": "./dist/index.min.cjs"
+    }
   },
   "scripts": {
     "build": "mkdir -p ./dist && rm -rf ./dist/* && node ./build.js && npm run minify-esm && npm run minify-cjs",
@@ -20,10 +25,11 @@
     "test": "esbuild --bundle test/test.js | tape-run | tap-arc"
   },
   "devDependencies": {
+    "@nichoth/tapzero": "^0.8.4",
     "esbuild": "0.19.10",
     "tap-arc": "1.2.2",
     "tape-run": "11.0.0",
-    "@nichoth/tapzero": "^0.8.4",
+    "typescript": "5.3.3",
     "xterm": "5.3.0"
   },
   "repository": {

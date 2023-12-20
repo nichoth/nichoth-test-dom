@@ -2,9 +2,8 @@
   "compilerOptions": {
     "types": ["node"],
     "target": "es2018",
-    "lib": ["es2018"],
+    "lib": ["es2022"],
     "noEmit": true,
-    "module": "commonjs",
     "allowJs": true,
     "checkJs": true,
     "noFallthroughCasesInSwitch": true,
