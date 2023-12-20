@@ -1,16 +1,21 @@
 {
-  "extends": "./_types/base-tsconfig.json",
   "compilerOptions": {
-    "target": "es2018",
+    "target": "es2022",
     "types": ["node"],
+    "declaration": true,
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "lib": ["es2018", "dom", "DOM.Iterable"],
-    "noEmit": true,
     "checkJs": true,
     "strict": false,
     "baseUrl": "./",
     "resolveJsonModule": true,
+    "allowJs": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "maxNodeModuleJsDepth": 0,
     "paths": {
       "*" : ["./_types/*"]
     }
