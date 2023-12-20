@@ -1,11 +1,6 @@
 // @ts-check
 'use strict'
 
-/**
- * had previously used `@testing-library/dom` & `@testing-library/user-event`.
- * We found these dependencies to be large, buggy and hard to work with.
- */
-
 const dom = {}
 const SECOND = 1000
 
